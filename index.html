@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+    <title>Strona</title>
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+        integrity=
+"sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"></script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+        integrity=
+"sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"></script>
+</head>
+<body data-bs-spy="scroll" data-bs-target="navbar" data-bs-offset="50">
+      <!--Nawigacja-->
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container">
+         <a href="#HOME" class="navbar-brand">Kamil Ławrynowicz</a>
+
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse" id="navmenu" >
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="#PROJEKTY" class="nav-link">Moje Projekty</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#ABOUT" class="nav-link">O mnie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#FORMULARZ" class="nav-link">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#KALKULATOR" class="nav-link">Cennik</a>
+                </li>
+            </ul>
+         </div>
+        </div>
+
+      </nav>
+
+  <!--Zawartość-->
+ <section class="bgimage" id="HOME">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">Witaj mam na imię Kamil</h2>
+                <p class="hero_desc">Jestem początkującym programistą!</p>
+            </div>
+            </div>
+        </div>
+    </section>
+  <!--Projekty-->
+  <section id="PROJEKTY"  class="bg-dark text-light p-5 text-center">
+    <div class="container">
+        <div class="d-sm-flex">
+            <div>
+              <h1>Moje <span class="text-warning"> Projekty </span></h1> 
+              <p class="lead my-4">
+                Jestem początkującym programistą, jednak posiadam skromną ilość projektów, które dostępne są na moim <span class="text-warning">Githubie</span>.
+              </p> 
+              <p class="sub">
+                <button
+                <a class="btn btn-primary btn-lg" href="https://github.com/klawrynowicz?tab=repositories" role="button"> Github </a> 
+                </button>
+              </p>
+            </div>
+            <img class="img-fluid w-50 d-none d-sm-block" src="projekty.png" alt="">
+        </div>
+    </div>
+  </section>
+  <!--O Mnie-->
+  <section id="ABOUT"  class="bg-dark text-light p-5 text-center">
+    <div class="container">
+        <div class="d-sm-flex">
+            <div>
+              <h1>O <span class="text-warning"> Mnie </span></h1> 
+              <p class="lead">
+                Mam na imię Kamil, jestem początkującym programistą. Interesuję się grami komputerowymi i informatyką ale w wolnych chwilach uwielbiam grać w tenisa i spędzać czas aktywnie.
+              </p> 
+              <p class="sub">
+                Specjalizuję się głównie w językach backendowych takich jak C# czy C++ jednak posiadam wiedzę i umiejętności na temat języka Javascript oraz css.
+              </p>
+              <p>
+                Oferuję takze usługi doradcze i instalacyjne przy budowaniu komputerów oraz instalacji systemów i programów.
+              </p>
+            </div>
+            <img class="img-fluid w-50 d-none d-sm-block" src="o mnie.png" alt="">
+        </div>
+    </div>
+  </section>
+  <!--Kontakt-->
+  <section id="FORMULARZ"  class="bg-dark text-light p-5 text-center">
+    <div class="container">
+        <div class="d-sm-flex">
+            <div>
+              <h1>Skontaktuj się ze <span class="text-warning"> mną!</span></h1> 
+              <p class="lead">
+                Skorzystaj z formularza ponizej by się ze mną skontaktować!
+              </p> 
+
+<div class="container py-4">
+
+
+  <form id="contactForm">
+
+
+    <div class="mb-3">
+      <label class="form-label" for="name">Imię</label>
+      <input class="form-control" id="name" type="text" placeholder="Imię" data-sb-validations="required" />
+      <div class="invalid-feedback" data-sb-feedback="name:required">Imię jest wymagane!</div>
+    </div>
+
+
+    <div class="mb-3">
+      <label class="form-label" for="emailAddress">Adres E-mail</label>
+      <input class="form-control" id="emailAddress" type="email" placeholder="E-mail" data-sb-validations="required, email" />
+      <div class="invalid-feedback" data-sb-feedback="emailAddress:required">adres e-mail jest wymagany.</div>
+      <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Nieprawidłowy adres e-mail.</div>
+    </div>
+
+
+    <div class="mb-3">
+      <label class="form-label" for="message">Wiadomość</label>
+      <textarea class="form-control" id="message" type="text" placeholder="Wiadomość" style="height: 10rem;" data-sb-validations="required"></textarea>
+      <div class="invalid-feedback" data-sb-feedback="message:required">Wiadomość jest obowiązkowa!</div>
+    </div>
+
+
+    <div class="d-none" id="submitSuccessMessage">
+      <div class="text-center mb-3">Wysłano!</div>
+    </div>
+
+
+    <div class="d-none" id="submitErrorMessage">
+      <div class="text-center text-danger mb-3">Wystąpił błąd podczas wysyłania!</div>
+    </div>
+
+
+    <div class="d-grid">
+      <button class="btn btn-primary btn-lg" type="submit">Wyślij</button>
+    </div>
+
+  </form>
+
+</div>
+            </div>
+            <img class="img-fluid w-50 d-none d-sm-block" src="moja grafika (2).png" alt="">
+        </div>
+    </div>
+  </section>
+  <title>Kalkulator usług</title>
+  <style>
+    #background {
+        /* Tutaj możesz wstawić ścieżkę do pliku graficznego tła */
+        background-image: url('o mnie ');
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        padding: 20px;
+    }
+</style>
+    <script>
+        function dodajUsługę() {
+            var usługa = document.getElementById("usługa").value;
+            var cena = parseFloat(document.getElementById("cena").value);
+            var koszyk = document.getElementById("koszyk");
+
+            var nowaUsługa = document.createElement("li");
+            nowaUsługa.innerHTML = usługa + " - " + cena.toFixed(2) + " zł";
+
+            var usuńPrzycisk = document.createElement("button");
+            usuńPrzycisk.innerHTML = "Usuń";
+            usuńPrzycisk.onclick = function() {
+                nowaUsługa.parentNode.removeChild(nowaUsługa);
+            };
+            nowaUsługa.appendChild(usuńPrzycisk);
+
+            koszyk.appendChild(nowaUsługa);
+        }
+
+        function obliczSumę() {
+            var koszyk = document.getElementById("koszyk");
+            var usługi = koszyk.getElementsByTagName("li");
+            var suma = 0.0;
+
+            for (var i = 0; i < usługi.length; i++) {
+                var cena = parseFloat(usługi[i].innerHTML.split(" - ")[1]);
+                suma += cena;
+            }
+
+            document.getElementById("suma").innerHTML = "Razem do zapłaty: " + suma.toFixed(2) + " zł";
+        }
+    </script>
+</head>
+<body>
+    <h1>Kalkulator usług</h1>
+
+    <label for="usługa">Nazwa usługi:</label>
+    <input type="text" id="usługa">
+    <br>
+    <label for="cena">Cena:</label>
+    <input type="number" id="cena">
+    <br>
+    <button onclick="dodajUsługę()">Dodaj usługę do koszyka</button>
+    <br>
+
+    <h2>Wybierz usługi:</h2>
+    <ul>
+        <li onclick="document.getElementById('usługa').value = 'Budowa strony internetowej'; document.getElementById('cena').value = '1000.00';">Budowa strony internetowej - 1000.00 zł</li>
+        <li onclick="document.getElementById('usługa').value = 'Odpalenie strony internetowej'; document.getElementById('cena').value = '300.00';">Odpalenie strony internetowej - 300.00 zł</li>
+        <li onclick="document.getElementById('usługa').value = 'Serwis komputerowy'; document.getElementById('cena').value = '150.00';">Serwis komputerowy - 150.00 zł</li>
+        <li onclick="document.getElementById('usługa').value = 'Składanie komputera od podstaw'; document.getElementById('cena').value = '300.00';">Składanie komputera od podstaw - 300.00 zł</li>
+        <li onclick="document.getElementById('usługa').value = 'Dobór części'; document.getElementById('cena').value = '100.00';">Dobór części - 100.00 zł</li>
+        <li onclick="document.getElementById('usługa').value = 'Złożenie komputera na gotowych częściach'; document.getElementById('cena').value = '250.00';">Złożenie komputera na gotowych częściach - 250.00 zł</li>
+    </ul>
+
+    <br>
+
+    <h2>Koszyk:</h2>
+    <ul id="koszyk"></ul>
+
+    <br>
+
+    <button onclick="obliczSumę()">Oblicz sumę</button>
+    <p id="suma"></p>
+</body>
+  </section>
+    <footer id="footer">
+        <div class="container-fluid">
+
+            <div class="social-icons mt-4">
+                <a href="https://www.facebook.com/profile.php?id=100007188485689" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/kamil-%C5%82awrynowicz/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
