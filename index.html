@@ -162,6 +162,44 @@
         </div>
     </div>
   </section>
+  <style>
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popup {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        max-width: 500px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<div class="overlay" id="privacyOverlay">
+    <div class="popup">
+        <h2>Polityka Prywatności</h2>
+        <p>Treść Polityki Prywatności aplikacji znajduje się w <a href="polityka_prywatnosci.pdf" target="_blank">tym pliku</a>. Przed korzystaniem z aplikacji, prosimy o zapoznanie się z treścią Polityki Prywatności i zaakceptowanie jej.</p>
+        <button onclick="acceptPrivacyPolicy()">Akceptuję</button>
+    </div>
+</div>
+
+<script>
+    function acceptPrivacyPolicy() {
+        document.getElementById('privacyOverlay').style.display = 'none';
+        // Tutaj można umieścić kod do kontynuacji działania aplikacji po zaakceptowaniu Polityki Prywatności
+    }
+</script>
+</body>
   <title>Kalkulator usług</title>
   <style>
     #background {
