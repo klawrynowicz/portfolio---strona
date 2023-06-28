@@ -39,7 +39,9 @@ body {
     font-size: 36px;
     cursor: pointer;
 }
-
+.fa-facebook:hover,.fa-instagram:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #008000;
+}
 .fab {
     color: #000000;
 }
@@ -74,4 +76,11 @@ input[type="text"] {
     border: none;
     border-radius: 5px;
     border: 2px solid black;
+}
+#background {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 20px;
 }
